@@ -13,7 +13,6 @@ import java.time.LocalDateTime;
 @WebServlet("/join-form")
 public class JoinFormServlet extends HttpServlet { // 원래는 서버소켓 만들고 앱셉트 달고 그랬는데 extends HttpServlet 를 하면 그런 것 안 해도 됨.
 
-
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         LocalDateTime now = LocalDateTime.now(); // 자바코드에서 html을 만들면 html사이에 자바코드를 끼워 넣을 수 있다.(동적 페이지)
